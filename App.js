@@ -9,7 +9,13 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Index" component={IndexScreen} />
+        <Stack.Screen
+          name="Index"
+          component={IndexScreen}
+          options={{
+            title: "Blogs"
+          }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
